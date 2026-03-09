@@ -1,0 +1,47 @@
+data:
+    type: "Generation"
+    train_dataset: "train"
+    val_dataset: "val"
+    test_dataset: "test"
+    patch_size: 512
+    scale: 0.3
+    channels: 3
+    num_workers: 0
+    data_dir: "/data/Disk_dataset/datasets/imagefusion/MSRS/test/"
+    ckpt_dir: "ckpt"
+    conditional: False
+
+model:
+    in_channels: 2
+    out_ch: 2
+    ch: 64
+    ch_mult: [1, 2, 3, 4]
+    num_res_blocks: 2
+    dropout: 0.0
+    ema_rate: 0.999
+    ema: True
+    resamp_with_conv: True
+    
+
+diffusion:
+    beta_schedule: linear
+    beta_start: 0.0001
+    beta_end: 0.02
+    num_diffusion_timesteps: 1000
+    num_sampling_timesteps: 20
+
+training:
+    patch_n: 1
+    batch_size: 1
+    n_epochs: 300
+    validation_freq: 1000
+
+sampling:
+    batch_size: 1
+
+optim:
+    weight_decay: 0.000
+    optimizer: "Adam"
+    lr: 0.00002
+    amsgrad: False
+    eps: 0.00000001
