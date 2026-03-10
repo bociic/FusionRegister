@@ -72,7 +72,7 @@ python test.py --save_result #test MMDRFuse (Main Version)
 
 ## Test S4Fusion Version
 1. Download the pretrained weight of image fusion from [S4Fusion](https://github.com/zipper112/S4Fusion/), and download the pretrained weight of [FusionRegister(S4-Version)](https://drive.google.com/file/d/1-ptOkzgcfAv43r-wHsKYZ_yOAA9dwwFz/view?usp=sharing). Put them under `./checkpoints`.
-2. Prepare testing dataset and modify "input_dir", "target_dir", and "weights" in `./test_s4.py`
+2. Prepare testing dataset and modify "input_dir", "register_weights", and "fusion_weights" in `./test_s4.py`
 3. Run test
 ```
 python test_s4.py --save_result #test S4Fusion (TIP 2025)
@@ -81,7 +81,7 @@ python test_s4.py --save_result #test S4Fusion (TIP 2025)
 
 ## Test HCLFuse Version
 1. Download the pretrained weight of image fusion from [HCLFuse](https://github.com/LinGuo-H/HCLFuse), and download the pretrained weight of [FusionRegister(HCL-Version)](https://drive.google.com/file/d/1hZ6hRP8xNW4EoA4pmtTLpMyeWpMdeauz/view?usp=sharing). Put them under `./checkpoints`.
-2. Prepare testing dataset and modify "input_dir", "target_dir", and "weights" in `./test_hcl.py`
+2. Prepare testing dataset and modify "input_dir", "register_weights", and "fusion_weights"  in `./test_hcl.py`
 3. Run test
 ```
 python test_hcl.py --save_result #test HCLFuse(NeurIPS 2025) 
@@ -96,7 +96,7 @@ git clone https://github.com/ChengxuLiu/MISCFilter.git
 cd MISCFilter
 pip install requirements.txt
 ```
-2. Prepare training dataset and modify "train_dir" and "val_dir" in `./train_RealBlur_J.py`. 
+2. Prepare training dataset and modify "input_dir" and "fusion_weights" in `./train.py`. If you want to finetune from the pretrained weight you can modify "pretrained_weights" in `./train.py`
 3. If you want to train your own version, modify `Load the Fusion Net` and `Get the Original Fused Image` in Line 106 and Line 175 in `train.py`
 3. Run training
 ```
