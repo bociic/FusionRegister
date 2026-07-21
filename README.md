@@ -1,5 +1,5 @@
 # [CVPR 2026] FusionRegister
-This is the official PyTorch implementation of the paper **FusionRegister: Every Infrared and Visible Image Fusion Deserves Registration** [[paper]]() [[arxiv]](https://arxiv.org/abs/2603.07667).
+This is the official PyTorch implementation of the paper **FusionRegister: Every Infrared and Visible Image Fusion Deserves Registration** [[paper]](https://openaccess.thecvf.com/content/CVPR2026/html/Bian_FusionRegister_Every_Infrared_and_Visible_Image_Fusion_Deserves_Registration_CVPR_2026_paper.html) [[arxiv]](https://arxiv.org/abs/2603.07667).
 
 ## Contents
 - [Requirements and dependencies](#requirements_and_dependencies)
