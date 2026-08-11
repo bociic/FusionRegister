@@ -107,14 +107,13 @@ python train.py
 ## Citation
 If you find the code and pre-trained models useful for your research, please consider citing our paper. :blush:
 ```
-@misc{bian2026fusionregisterinfraredvisibleimage,
-      title={FusionRegister: Every Infrared and Visible Image Fusion Deserves Registration}, 
-      author={Congcong Bian and Haolong Ma and Hui Li and Zhongwei Shen and Xiaoqing Luo and Xiaoning Song and Xiao-Jun Wu},
-      year={2026},
-      eprint={2603.07667},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2603.07667}, 
+@InProceedings{Bian_2026_CVPR,
+    author    = {Bian, Congcong and Ma, Haolong and Li, Hui and Shen, Zhongwei and Luo, Xiaoqing and Song, Xiaoning and Wu, Xiao-jun},
+    title     = {FusionRegister: Every Infrared and Visible Image Fusion Deserves Registration},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2026},
+    pages     = {41551-41561}
 }
 ``` 
 
